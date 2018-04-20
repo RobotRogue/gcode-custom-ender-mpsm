@@ -11,11 +11,11 @@ M190 S60            ; Wait for bed to reach 60 degrees before continuing priming
 M107                ; Start with the fan off
 
 G92 E0              ; Reset the extruder to 0
-G0 Z5 E5 F500       ; Move up and prime the nozzle (extrude 5mm filament, 500mm/s)
+G0 Z5 E5 F500       ; Move up and prime the nozzle (extrude 5mm filament, 500mm/min)
 G1 Y2               ; Move bed a touch forward
 G28 Z0              ; Reset Z to home position
 
-G1 Y60 E8 F500      ; Draw a priming/wiping line to the rear (extrude 8mm filament, 500mm/s)
+G1 Y60 E8 F500      ; Draw a priming/wiping line to the rear (extrude 8mm filament, 500mm/min)
 G1 X2               ; Move a little closer to the print area
 G1 Y10 E16 F500     ; Draw more priming/wiping (extrude 16mm filament, 500mm/s)
 G1 E15 F250         ; Small retract
