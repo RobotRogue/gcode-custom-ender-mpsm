@@ -1,5 +1,7 @@
 ; Print Done, Shutdown Time!
 
+M117 Doot doot we done!
+
 M104 S0 ; turn off hotend/extruder heater
 M140 S0 ; turn off bed heater
 
