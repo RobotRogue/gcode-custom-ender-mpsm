@@ -6,7 +6,7 @@ M82                 ; Use absolute mode for extruder
 M104 S190           ; Start heating the hotend to 190 degrees Celsius
 M140 S55            ; Start heating the bed to 55 degrees Celsius
 G28                 ; Home all axes while the extruder is still heating
-M109 S205           ; Wait for hotend to reach 205 degrees before continuing priming routine
+M109 S210           ; Wait for hotend to reach 205 degrees before continuing priming routine
 M190 S60            ; Wait for bed to reach 60 degrees before continuing priming routine
 M107                ; Start with the fan off
 
